@@ -5,6 +5,6 @@ $(document).ready(function() {
             $(this).load(config.prefix + tagName + '.html?cb=' + (new Date().getTime()));
         });
     }({
-        prefix: 'https://github.com/ZiqueYuutaka/WebContent'
+        prefix: 'https://github.com/ZiqueYuutaka/WebContent/src/'
     });
 });
