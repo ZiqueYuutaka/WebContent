@@ -8,9 +8,8 @@
   <meta name="description" content="The HTML5 Herald">
   <meta name="author" content="SitePoint">
 
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
+  <link rel="stylesheet" href="css/styles.css?v=1.0"> 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-  
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -18,13 +17,29 @@
 </head>
 
 <body>
-<script src="js/githubpuller.js"></script>
+	<script type="text/javascript">
+$(document).ready(function() {
+	$("#zique-tag").load("https://raw.githubusercontent.com/ZiqueYuutaka/WebContent/master/src/test.html");
+/*    function(config) {
+        $('.zique-tag').each(function() {
+            var tagName = $(this).data('zique-tag');
+            //$(this).load(config.prefix + tagName + '.html?cb=' + (new Date().getTime()));
+            $(this).load(config.prefix);
+        });
+    }({
+        prefix: 'https://raw.githubusercontent.com/ZiqueYuutaka/WebContent/master/src/test.html'
+    });*/
+});
+ </script>
   <p>
   	This is a demo
   </p>
 
-  <div class="zique-tag" data-zique-tag="test"></div>  
+  <div id="zique-tag" data-zique-tag="test">
+  </div>
+  <!--div id="zique-tag" data-zique-tag="test"></div--> 
 
 
+  
 </body>
 </html>
